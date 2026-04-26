@@ -8,29 +8,30 @@ const Sidebar = () => {
         <aside style={{width:'300px', height: '100vh' , backgroundColor:'#ffffff', borderRight: '1px solid #f0f0f0', paddingLeft: '0px' , paddingRight: '20px'}}>
             <h1 style={{color: '#0D4D4D', fontSize: '24px', fontWeight:'bold', padding:'24px'}}>Fundly</h1>
 
-            <div style={{ display: 'flex', alignItems:'center', gap: '2px', paddingTop: '10px', paddingBottom: '10px', paddingRight: '10px' , paddingLeft: '20px', borderRadius:'12px', backgroundColor: '#E8F5F3', cursor:'pointer', marginBottom:'15px'}} 
-                onClick={
-                    () => setActivePage("Dashboard")
-                    } 
-                    style={
-                        { display: 'flex', alignItems:'center', gap: '2px', paddingTop: '10px', 
-                        paddingBottom: '10px', paddingRight: '10px', paddingLeft: '20px', borderRadius:'12px', 
-                        backgroundColor: activePage === "Dashboard" ? '#E8F5F3': 'transparent', 
-                        cursor:'pointer', marginBottom:'15px'}}>
+    <div 
+        onClick={() => setActivePage("Dashboard")} 
+        style={{
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '2px', 
+            paddingTop: '10px', 
+        
+            paddingBottom: '10px',         
+            paddingRight: '10px', 
+            paddingLeft: '20px', 
+            borderRadius: '12px', 
+            backgroundColor: activePage === "Dashboard" ? '#E8F5F3' : 'transparent', 
+            cursor: 'pointer', 
+            marginBottom: '15px'
+    }}>
 
-                <LayoutGrid size={20} color={activePage === "Dashboard" ? '#0d4d4d': '#9ca3af'} strokeWidth={2.5} />
-                <p style={{color: activePage === "Dashboard" ? '#0d4d4d' : '#9ca3af', fontWeight:'600', fontSize:'15px'}}>Dashboard</p>
+    <LayoutGrid size={20} color={activePage === "Dashboard" ? '#0d4d4d' : '#9ca3af'} strokeWidth={2.5} />
+    <p style={{color: activePage === "Dashboard" ? '#0d4d4d' : '#9ca3af', fontWeight: '600', fontSize: '15px'}}>Dashboard</p>
 
-            </div>
+</div>
 
-            <div style={
-                { display: 'flex', alignItems:'center', gap: '2px', 
-                paddingTop: '10px', paddingBottom: '10px', 
-                paddingRight: '10px' , paddingLeft: '20px', 
-                borderRadius:'12px', cursor:'pointer', marginBottom:'15px'}
-                } onClick={
-                    () => setActivePage("History")
-                    } 
+            <div
+            onClick={() => setActivePage("History")} 
                     style={
                         { display: 'flex', alignItems:'center', gap: '2px', paddingTop: '10px', 
                         paddingBottom: '10px', paddingRight: '10px', paddingLeft: '20px', borderRadius:'12px', 
@@ -42,13 +43,7 @@ const Sidebar = () => {
             </div>
 
 
-            <div style={
-                {display: 'flex', alignItems:'center', 
-                gap: '2px', paddingTop: '10px', 
-                paddingBottom: '10px', paddingRight: '10px', 
-                paddingLeft: '20px', borderRadius:'12px',
-                cursor:'pointer', marginBottom:'15px'}
-                } onClick={
+            <div onClick={
                     () => setActivePage("Insights")
                     } 
                     style={
@@ -61,13 +56,7 @@ const Sidebar = () => {
             </div>
 
             
-            <div style={
-                { display: 'flex', alignItems:'center', 
-                gap: '2px', paddingTop: '10px', 
-                paddingBottom: '10px', paddingRight: '10px' , 
-                paddingLeft: '20px', borderRadius:'12px', 
-                cursor:'pointer', marginBottom:'15px'}
-                }onClick={
+            <div onClick={
                     () => setActivePage("Transactions")
                     } 
                     style={
@@ -80,13 +69,7 @@ const Sidebar = () => {
             </div>
 
             
-            <div style={
-                { display: 'flex', alignItems:'center', 
-                gap: '2px', paddingTop: '10px', 
-                paddingBottom: '10px', paddingRight: '10px' , 
-                paddingLeft: '20px', borderRadius:'12px', 
-                cursor:'pointer', marginBottom:'15px'}
-                }onClick={
+            <div onClick={
                     () => setActivePage("Wallet")
                     } 
                     style={
@@ -98,12 +81,7 @@ const Sidebar = () => {
                 <p style={{color: activePage === "Wallet" ? '#0d4d4d': '#9ca3af', fontWeight:'600', fontSize:'15px'}}>Wallet</p>
             </div>
 
-             <div style={{ display: 'flex', alignItems:'center', 
-                gap: '2px', paddingTop: '10px', 
-                paddingBottom: '10px', paddingRight: '10px' , 
-                paddingLeft: '20px', borderRadius:'12px', 
-                cursor:'pointer', marginBottom:'15px'}
-                }onClick={
+             <div onClick={
                     () => setActivePage("Settings")
                     } 
                     style={
