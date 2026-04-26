@@ -36,7 +36,9 @@ body {
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 10;
+  margin-top: 2;
+  margin-left: 2;
+  margin-bottom: 2;
 }
 
 a {
