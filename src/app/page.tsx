@@ -1,9 +1,15 @@
 import Sidebar from "./components/Sidebar";
+import Dashboard from "./components/Dashboard/page";
+
+
 export default function Home() {
   return(
-    <div className="flex bg-white min-h-screen">
+    <div style={{display: 'flex', backgroundColor: 'white', minHeight: '100vh'}}>
       <Sidebar />
-      <main className="flex-1 p-8">
+      
+
+      <main style={{flex: 1}}>
+        <Dashboard />
       </main>
     </div>
   )
